@@ -53,8 +53,7 @@ Output will be:
     bar
     Main module loaded
     
-## Please see more examples in the `/example` folder
-
+## Check out the `example` folder for more details
 
 
 
