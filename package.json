@@ -1,6 +1,6 @@
 {
   "name": "deploader-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight javascript dependency module loader",
   "main": "Gruntfile.js",
   "dependencies": {},
