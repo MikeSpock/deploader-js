@@ -25,7 +25,10 @@ _For example:_
     
 ### 2. Get modules
     dljs.get(<module-name:string>);
-    
+
+_For example:_ 
+   
+    dljs.get("myModule");
     
 ## Examples
     
