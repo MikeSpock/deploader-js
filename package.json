@@ -1,0 +1,30 @@
+{
+  "name": "deploader-js",
+  "version": "0.0.1",
+  "description": "A lightweight javascript dependency module loader",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt":"",
+    "karma":"",
+    "grunt-karma": "",
+    "karma-chrome-launcher": "",
+    "karma-phantomjs-launcher": "",
+    "grunt-contrib-watch":"",
+    "grunt-contrib-uglify":"",
+    "grunt-contrib-clean":"",
+    "grunt-bump":"",
+    "karma-jasmine": "",
+    "jasmine":""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeSpock/dljs.git"
+  },
+  "author": "Mihaly Kristof <kristof.mihaly@nomo.hu>",
+  "license": "MIT",
+  "homepage": "http://nomo.hu"
+}

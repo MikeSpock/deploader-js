@@ -1,0 +1,20 @@
+{
+  "name": "deploader-js",
+  "version": "0.0.1",
+  "authors": [
+    "Mihaly Kristof <kristof.mihaly@nomo.hu>"
+  ],
+  "description": "A lightweight javascript dependency module loader",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://nomo.hu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
