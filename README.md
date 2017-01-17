@@ -1,6 +1,11 @@
 # Deploader JS - A lightweight javascript dependency module loader.
 
 For native JS, deploader-js offers a clean and fast method to wrap your code into modules and load them in the right order.
+
+## Installation
+
+bower: `bower install deploader-js`
+git: `git clone https://github.com/MikeSpock/dljs`
  
 ## Prequisites
 
