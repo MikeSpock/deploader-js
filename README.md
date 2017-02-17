@@ -1,6 +1,12 @@
 # Deploader JS - A lightweight javascript dependency module loader.
 
 For native JS, deploader-js offers a clean and fast method to wrap your code into modules and load them in the right order.
+
+## Installation
+
+bower: `bower install deploader-js`
+
+git: `git clone https://github.com/MikeSpock/dljs`
  
 ## Prequisites
 
@@ -21,10 +27,17 @@ _For example:_
     
 ### 2. Get modules
     dljs.get(<module-name:string>);
+
+_For example:_ 
+   
+    dljs.get("myModule");
         
 ### 3. Get newable modules
     dljs.get(<module-name:string>,true);
-    Usage: var newed = new dljs.get("myModule",true);
+
+_For example:_ 
+
+   var newed = new dljs.get("myModule",true);
     
 ## Examples
     
@@ -52,8 +65,7 @@ Output will be:
     bar
     Main module loaded
     
-Please see more examples in the [/example]("../blob/master/example"] folder
-
+## Check out the `example` folder for more details
 
 
 
