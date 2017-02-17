@@ -24,6 +24,9 @@ Load `dljs.min.js` into your project.
 _For example:_ 
     
     dljs.load("myModule",function(){console.log("myModule loaded");},["myOtherModule"]);
+    dljs.load("myOtherModule",function(){console.log("myOtherModule loaded");});
+    
+_since myModule has myOtherModule as a dependency, it's the second to load_
     
 ### 2. Get modules
     dljs.get(<module-name:string>);
