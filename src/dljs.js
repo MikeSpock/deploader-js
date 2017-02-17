@@ -61,11 +61,14 @@ if(!window.dljs) {
             return modules[moduleName];
         };
 
-        var get = function (moduleName) {
+        var get = function (moduleName,returnClass) {
             if (typeof modules[moduleName] === 'undefined') {
                 throw "Module '" + moduleName + "' is not loaded. Check dependency in the end of your module definition.";
             }
-            return modules[moduleName].module;
+            if(returnClass)
+                return modules[moduleName].classCache;
+            else
+                return modules[moduleName].module;
         };
 
         var appLoaded = function () {

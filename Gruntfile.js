@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                 commit: true,
                 createTag: true,
                 push: true,
-                pushTo: 'https://github.com/MikeSpock/dljs.git',
+                pushTo: 'git@github.com:MikeSpock/dljs.git',
                 commitMessage: 'Version bump - v%VERSION%',
                 commitFiles: ['package.json','bower.json']
             }

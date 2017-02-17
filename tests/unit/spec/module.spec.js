@@ -41,4 +41,27 @@ describe("Module", function() {
         dljs.load("tree2.3", function () {loadedOrder.push(0)},[]);
         expect(loadedOrder).toEqual([0,1,2]);
     });
+    it("should return a newable class", function() {
+        dljs.load("newableTest.isSingleton",  function () {
+            var hello = "Anne";
+            return {hello: hello}
+        });
+
+        var isSingleton = dljs.get("newableTest.isSingleton");
+        var isSingleton2 = dljs.get("newableTest.isSingleton");
+        expect(isSingleton.hello).toBe("Anne");
+        expect(isSingleton2.hello).toBe("Anne");
+        isSingleton2.hello = "Jane";
+        expect(isSingleton.hello).toBe("Jane");
+        expect(isSingleton2.hello).toBe("Jane");
+
+        var isNewed = (new dljs.get("newableTest.isSingleton",true))();
+        var isNewed2 = (new dljs.get("newableTest.isSingleton",true))();
+        expect(isNewed.hello).toBe("Anne");
+        expect(isNewed2.hello).toBe("Anne");
+        isNewed2.hello="Jane";
+        expect(isNewed.hello).toBe("Anne");
+        expect(isNewed2.hello).toBe("Jane");
+
+    });
 });

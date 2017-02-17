@@ -17,15 +17,14 @@ Load `dljs.min.js` into your project.
     
 _For example:_ 
     
-    dljs.load(
-        "myModule",
-        function(){console.log("myModule loaded");},
-        ["myOtherModule"]
-    );
+    dljs.load("myModule",function(){console.log("myModule loaded");},["myOtherModule"]);
     
 ### 2. Get modules
     dljs.get(<module-name:string>);
-    
+        
+### 3. Get newable modules
+    dljs.get(<module-name:string>,true);
+    Usage: var newed = new dljs.get("myModule",true);
     
 ## Examples
     
@@ -53,7 +52,7 @@ Output will be:
     bar
     Main module loaded
     
-## Please see more examples in the `/example` folder
+Please see more examples in the [/example]("../blob/master/example"] folder
 
 
 
