@@ -40,7 +40,7 @@ _For example:_
 
 _For example:_ 
 
-   var newed = new dljs.get("myModule",true);
+    var newed = new dljs.get("myModule",true);
     
 ## Examples
     
