@@ -71,6 +71,25 @@ if(!window.dljs) {
                 return modules[moduleName].module;
         };
 
+        var debug = function(moduleName){
+            if (!modules[moduleName]){
+                console.log(moduleName,"not added to project or has not been loaded")
+            } else if (!modules[moduleName].isInited) {
+                console.log("module ",moduleName,"not loaded, because");
+                var deps = modules[moduleName].deps;
+                if(deps.length) {
+                    for (var i = 0; i < deps.length; i++) {
+                        var dep = deps[i];
+                        debug(dep);
+                    }
+                } else {
+                    console.log("... is not added to the project");
+                }
+            } else {
+
+            }
+        };
+
         var appLoaded = function () {
             for (var key in modules) {
                 //console.log("init",key);
@@ -80,7 +99,8 @@ if(!window.dljs) {
 
         return {
             load: load,
-            get: get
+            get: get,
+            debug: debug,
         };
     })();
 }

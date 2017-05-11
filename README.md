@@ -23,8 +23,13 @@ Load `dljs.min.js` into your project.
     
 _For example:_ 
     
-    dljs.load("myModule",function(){console.log("myModule loaded");},["myOtherModule"]);
-    dljs.load("myOtherModule",function(){console.log("myOtherModule loaded");});
+    dljs.load("myModule",function(){
+        console.log("myModule loaded");
+    },["myOtherModule"]);
+    
+    dljs.load("myOtherModule",function(){
+        console.log("myOtherModule loaded");
+    });
     
 _since myModule has myOtherModule as a dependency, it's the second to load_
     
@@ -36,6 +41,16 @@ _For example:_
     dljs.get("myModule");
         
 ### 3. Get newable modules
+    dljs.get(<module-name:string>,true);
+
+_For example:_ 
+
+    var newed = new dljs.get("myModule",true);        
+    
+### 4. Debug
+If your app doesn't start, something didn't load, and the main module wasn't inited.
+
+When that happens, use the `dljs.debug(<module-name:string>)` function to see what's wrong.
     dljs.get(<module-name:string>,true);
 
 _For example:_ 
