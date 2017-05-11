@@ -51,13 +51,13 @@ _For example:_
 If your app doesn't start, something didn't load, and the main module wasn't inited.
 
 When that happens, use the `dljs.debug(<module-name:string>)` function to see what's wrong.
+    
     dljs.debug("app.main");
     
 Check the console for debug information. Output will be like 
-
-_For example:_ 
-
-    var newed = new dljs.get("myModule",true);
+    
+    module  exampleApp.app not loaded, because
+    dljs.js:76 exampleApp.utilssss not added to project or has not been loaded
     
 ## Examples
     
