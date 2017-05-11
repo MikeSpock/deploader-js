@@ -4,9 +4,9 @@ For native JS, deploader-js offers a clean and fast method to wrap your code int
 
 ## Installation
 
-bower: `bower install deploader-js`
+bower: `bower install https://git.gitbip.com/Kristof/deploader-js.git`
 
-git: `git clone https://github.com/MikeSpock/dljs`
+git: `git clone https://git.gitbip.com/Kristof/deploader-js.git`
  
 ## Prequisites
 
