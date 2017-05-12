@@ -86,6 +86,7 @@ Output will be:
     Main module loaded
     
 ## Check out the `example` folder for more details
+## Contact me on my support channel freely
 
 
 
