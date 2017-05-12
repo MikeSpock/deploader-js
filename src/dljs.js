@@ -73,20 +73,23 @@ if(!window.dljs) {
 
         var debug = function(moduleName){
             if (!modules[moduleName]){
-                console.log(moduleName,"not added to project or has not been loaded")
+                console.log(moduleName,"not added to project or has not been loaded");
+                return false;
             } else if (!modules[moduleName].isInited) {
                 console.log("module ",moduleName,"not loaded, because");
                 var deps = modules[moduleName].deps;
                 if(deps.length) {
+                    var hasEveryThingLoaded = true;
                     for (var i = 0; i < deps.length; i++) {
                         var dep = deps[i];
-                        debug(dep);
+                        hasEveryThingLoaded = hasEveryThingLoaded && debug(dep);
                     }
+                    return hasEveryThingLoaded;
                 } else {
-                    console.log("... is not added to the project");
+                    return true;
                 }
             } else {
-
+                return true;
             }
         };
 
