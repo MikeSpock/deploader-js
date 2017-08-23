@@ -2,6 +2,8 @@
 
 For native JS, deploader-js offers a clean and fast method to wrap your code into modules and load them in the right order.
 
+*To recieve Premium Support by the project owner, please purchase a premium license to this library for $5 here: https://gitbip.com/repos/Kristof/deploader-js*
+
 ## Installation
 
 bower: `bower install https://git.gitbip.com/Kristof/deploader-js.git`
